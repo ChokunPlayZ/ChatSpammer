@@ -1,6 +1,15 @@
 # ChokunPlayZ's ChatSpammer
 สคริปแสปมแชทง่ายๆ โดย ChokunPlayZ
 
+อย่าลืมลง Python ก่อนรันนะ
+
+## อับเดต
+- ขอให้ผู้ใช้อ่านให้ระเอียด
+1. แก้ปัญหา pip ไม่ลงให้ โดยบังคับให้อับเดต pip และบังคับให้ใช้ pip3
+2. แก้ Python รันไม่ถูกวิธี โดยบังคับใด้ใช้ Python 3
+
+อย่าลืมลง Python ก่อนรันนะ
+
 ## การโหลด
 - กดตรง Code แล้วก็กด Download ZIP
 - หรือกด https://codeload.github.com/ChokunPlayZ/ChatSpammer/zip/master
