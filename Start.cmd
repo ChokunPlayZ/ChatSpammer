@@ -8,4 +8,4 @@ echo GitHub: ChokunPlayZ
 echo.
 timeout 5 >null
 del null
-py spam.py
+python3 spam.py

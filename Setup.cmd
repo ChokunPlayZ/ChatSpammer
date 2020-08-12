@@ -11,6 +11,11 @@ echo Checking for python !
 python --version
 echo.
 timeout 1 >null
+echo Updating pip
+pip install --upgrade pip
+echo Update pip Successfully
+echo.
+timeout 1 >null
 echo installing PyAutoGUI
 echo.
 pip install PyAutoGUI
