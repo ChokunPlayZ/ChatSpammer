@@ -55,6 +55,7 @@ print("enter a number")
 print("the file name should be number")
 print("UP to 10")
 print("1 is a default file")
+print()
 sf = input ("File Number : ")
 
 if (sf == "1"):
@@ -101,3 +102,9 @@ elif (opt == "2"):
 else:
     print("invald input quiting")
     quit()
+
+print()
+print("Done!")
+print("Quitting..")
+time.sleep(2)
+quit()
