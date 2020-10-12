@@ -12,14 +12,14 @@
 
 ## การโหลด
 1. โหลด ไฟล์พร้อมรัน
-  1.1 
-  1.2
-  1.3
+  - 1.1 
+  - 1.2
+  - 1.3
 
 2. โหลด Sorce Code
-  2.1 กดตรง Code แล้วก็กด Download ZIP
-  2.2 หรือกด https://codeload.github.com/ChokunPlayZ/ChatSpammer/zip/master
-  2.3 โหลด Python 3 https://www.python.org/downloads/
+  - 2.1 กดตรง Code แล้วก็กด Download ZIP
+  - 2.2 หรือกด https://codeload.github.com/ChokunPlayZ/ChatSpammer/zip/master
+  - 2.3 โหลด Python 3 https://www.python.org/downloads/
 
 ## การใช้
 1. การรันโดยใช้โปรแกรม .exe
