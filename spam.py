@@ -51,36 +51,38 @@ def CheckFiles():
         print ("File Does exist")
         checkall()
     else:
-        print ("File not exist")
+        print ("File not exist, Creating")
         Repo.clone_from("https://github.com/ChokunPlayZ/ChatSpammer-Data.git", "scripts")
-        quit()
 
 def delall():
     print ("File not exist, Creating")
     shutil.rmtree("scripts")
     Repo.clone_from("https://github.com/ChokunPlayZ/ChatSpammer-Data.git", "scripts")
 
+def FileExists():
+    time.sleep(0)
+
 def checkall():
     if os.path.isfile(Script1):
-        print ("Files exist")
+        FileExists()
         if os.path.isfile(Script2):
-            print ("Files exist") 
+            FileExists() 
             if os.path.isfile(Script3):
-                print ("Files exist")
+                FileExists()
                 if os.path.isfile(Script4):
-                    print ("Files exist")
+                    FileExists()
                     if os.path.isfile(Script5):
-                        print ("Files exist")
+                        FileExists()
                         if os.path.isfile(Script6):
-                            print ("Files exist")
+                            FileExists()
                             if os.path.isfile(Script7):
-                                print ("Files exist")
+                                FileExists()
                                 if os.path.isfile(Script8):
-                                    print ("Files exist")
+                                    FileExists()
                                     if os.path.isfile(Script9):
-                                        print ("Files exist")
+                                        FileExists()
                                         if os.path.isfile(Script10):
-                                            print ("Files exist")
+                                            FileExists()
                                         else:
                                             delall()
                                     else:
@@ -101,12 +103,6 @@ def checkall():
             delall()
     else:
         delall()
-
-                        
-                
-                    
-            
-    
 
 print("Welcome to CKPZ-Chat Dystroyer")
 print("Please Use This with only your friend !")
