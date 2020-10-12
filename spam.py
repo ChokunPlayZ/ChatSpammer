@@ -1,8 +1,12 @@
 # Code By ChokunPlayZ
 # Completely Open-Sorce Edit it to whatever you want
+# Compile using PyInstaller using -F tag
 
 import time
 import pyautogui
+import os.path
+import shutil
+from git.repo.base import Repo
 
 Script1 = "scripts/1.txt"
 Script2 = "scripts/2.txt"
@@ -42,11 +46,87 @@ def SendWords():
                 pyautogui.press('enter')
                 print("sent : " + word)
 
+def CheckFiles():
+    if os.path.isdir('scripts'):
+        print ("File Does exist")
+        checkall()
+    else:
+        print ("File not exist")
+        Repo.clone_from("https://github.com/ChokunPlayZ/ChatSpammer-Data.git", "scripts")
+        quit()
+
+def delall():
+    print ("File not exist, Creating")
+    shutil.rmtree("scripts")
+    Repo.clone_from("https://github.com/ChokunPlayZ/ChatSpammer-Data.git", "scripts")
+
+def checkall():
+    if os.path.isfile(Script1):
+        print ("Files exist")
+        if os.path.isfile(Script2):
+            print ("Files exist") 
+            if os.path.isfile(Script3):
+                print ("Files exist")
+                if os.path.isfile(Script4):
+                    print ("Files exist")
+                    if os.path.isfile(Script5):
+                        print ("Files exist")
+                        if os.path.isfile(Script6):
+                            print ("Files exist")
+                            if os.path.isfile(Script7):
+                                print ("Files exist")
+                                if os.path.isfile(Script8):
+                                    print ("Files exist")
+                                    if os.path.isfile(Script9):
+                                        print ("Files exist")
+                                        if os.path.isfile(Script10):
+                                            print ("Files exist")
+                                        else:
+                                            delall()
+                                    else:
+                                        delall()
+                                else:
+                                    delall()
+                            else:
+                                delall()
+                        else:
+                            delall()
+                    else:
+                        delall()
+                else:
+                    delall()
+            else:
+                delall()
+        else:
+            delall()
+    else:
+        delall()
+
+                        
+                
+                    
+            
+    
+
+print("Welcome to CKPZ-Chat Dystroyer")
+print("Please Use This with only your friend !")
+print("If Traget's Device isn't fast enough it will crash")
+print()
+print("Checking For Files ..")
+
+CheckFiles()
+
+time.sleep(2)
+print()
+print("Let's Get Started!")
+print()
+time.sleep(1)
 print("Select an Option")
 print("1. Spam Line By Lines")
 print("2. Spam Words By Words")
 print()
 opt = input ("Select : ")
+print ()
 
 time.sleep(1)
 
@@ -91,6 +171,7 @@ elif (sf == "10"):
 else:
     print("File Name is invald")
     print("Quitting ..")
+    time.sleep(2)
     quit()
 
 if (opt == "1"):
@@ -101,6 +182,7 @@ elif (opt == "2"):
     SendWords()
 else:
     print("invald input quiting")
+    time.sleep(2)
     quit()
 
 print()
